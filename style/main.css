@@ -1,0 +1,25 @@
+img {
+    height: 60vh;
+  }
+
+.card-img-top {
+
+    height: auto;
+}
+
+
+footer {
+    background-color: rgb(88, 85, 85);
+    color: white;
+}
+
+.carousel-item {
+
+    padding-bottom: 40px;
+}
+
+.carou3 {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+}
+
