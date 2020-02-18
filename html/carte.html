@@ -10,17 +10,17 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- Personal CSS -->
-    <!-- <link rel="stylesheet" href="style/bootstrap_docs.css"> -->
     <link rel="stylesheet" href="../style/main.css">
+    <!-- <link rel="stylesheet" href="style/bootstrap_docs.css"> -->
     <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
     <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
-
+    <script src="../js/map.js"></script>
     <title>Accueil</title>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <header>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
                 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,10 +44,8 @@
                 </ul>
             </div>
     </nav>
-
-
-    <iframe width="600" height="450" frameborder="0" style="border:0"
-        src="https://www.google.com/maps/embed/v1/view?zoom=12&center=43.1242,5.9280&key=..." allowfullscreen></iframe>
+    
+    <div id="map"></div>
 
     <!-- Footer -->
     <footer>
@@ -81,7 +79,10 @@
             </div>
         </div>
     </footer>
-    
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUgB8ZVQD88-T4nSgDlgVtH5fm0XcQAi8&callback=initMap">
+    </script>
 </body>
 
 </html>
